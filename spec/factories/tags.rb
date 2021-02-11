@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :tag do
-    title { "MyString" }
+    title { Faker::Commerce.department(max: 3) }
   end
 end
